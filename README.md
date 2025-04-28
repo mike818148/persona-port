@@ -1,17 +1,51 @@
+## Description
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+Persona Port is an AI-powered chatbot platform designed to help professionals create personalized digital assistants. These assistants can effectively showcase your professional background, skills, and experience to potential employers, recruiters, or visitors, providing an engaging and interactive way to present your professional profile.
+
+## Environment Variables
+
+Please prepare the .env file as below:
+
+```bash
+# Postgres (Initiate from Vercel)
+POSTGRES_URL="postgres://username:password@host:port/database?sslmode=require&supa=base-pooler.x"
+POSTGRES_PRISMA_URL="postgres://username:password@host:port/database?sslmode=require&supa=base-pooler.x"
+SUPABASE_URL="https://your-project-id.supabase.co"
+NEXT_PUBLIC_SUPABASE_URL="https://your-project-id.supabase.co"
+POSTGRES_URL_NON_POOLING="postgres://username:password@host:port/database?sslmode=require"
+SUPABASE_JWT_SECRET="your-jwt-secret"
+POSTGRES_USER="postgres"
+NEXT_PUBLIC_SUPABASE_ANON_KEY="your-supabase-anon-key"
+POSTGRES_PASSWORD="your-password"
+POSTGRES_DATABASE="postgres"
+SUPABASE_SERVICE_ROLE_KEY="your-service-role-key"
+POSTGRES_HOST="db.your-project-id.supabase.co"
+SUPABASE_ANON_KEY="your-supabase-anon-key"
+
+# OpenAI
+OPENAI_API_KEY="your-openai-api-key"
+
+# Deepseek
+DEEPSEEK_API_KEY="your-deepseek-api-key"
+
+# AUTH_KEY
+AUTH_KEY="your-auth-key"
+```
 
 ## Getting Started
 
-First, run the development server:
+First, install all the dependencies:
+
+```bash
+pnpm install
+```
+
+Second run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
