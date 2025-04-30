@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Persona Port",
+  title: "Ask Mike",
   description:
-    "This is a chatbot for the ISC platform. Only for education purpose in SailPoint Developers Day 2025",
+    "This is a small project called Persona Port. It's a visual representation of Mike's persona.",
 };
 
 export default function RootLayout({

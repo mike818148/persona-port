@@ -110,7 +110,7 @@ export default function ChatbotPage() {
                 <Button
                   key={index}
                   variant="outline"
-                  className="justify-start text-left h-auto py-3 px-4"
+                  className="justify-start text-left h-auto py-3 px-4 whitespace-normal break-words"
                   onClick={() => handleQuestionClick(question)}
                   disabled={isLoading}
                 >
