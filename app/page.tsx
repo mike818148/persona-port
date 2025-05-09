@@ -30,6 +30,7 @@ export default function ChatbotPage() {
     handleSubmit,
     isLoading,
     setMessages,
+    append,
   } = useChat({
     maxSteps: 3,
     body: {
@@ -47,12 +48,10 @@ export default function ChatbotPage() {
   ];
 
   const handleQuestionClick = (question: string) => {
-    handleInputChange({
-      target: { value: question },
-    } as React.ChangeEvent<HTMLInputElement>);
-    handleSubmit({
-      preventDefault: () => {},
-    } as React.FormEvent<HTMLFormElement>);
+    append({
+      role: "user",
+      content: question,
+    });
   };
 
   if (!mounted) {
